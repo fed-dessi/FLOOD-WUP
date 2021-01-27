@@ -357,7 +357,7 @@ void rfSenseCb ()
 
 ///RAIL event handler
 void
-sl_rail_app_on_event (RAIL_Handle_t rail_handle, RAIL_Events_t events)
+sl_rail_util_on_event (RAIL_Handle_t rail_handle, RAIL_Events_t events)
 {
   if (events & RAIL_EVENT_CAL_NEEDED)
     {
@@ -372,6 +372,7 @@ sl_rail_app_on_event (RAIL_Handle_t rail_handle, RAIL_Events_t events)
       portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
 }
+
 
 
 RAIL_Status_t RAILCb_SetupRxFifo (RAIL_Handle_t railHandle)
