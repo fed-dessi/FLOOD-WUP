@@ -1,5 +1,6 @@
 #CRC Codes for initially generated config files -- do not modify!
-#Tue Jan 26 12:28:30 CET 2021
+#Thu Jan 28 16:26:30 CET 2021
+sl_simple_led_led1_config.h=-1969224962
 sl_device_init_lfxo_config.h=-1054644319
 sl_rail_util_init_inst0_config.h=192565723
 sl_sleeptimer_config.h=-1879962229

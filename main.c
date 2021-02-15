@@ -45,6 +45,8 @@
 #include "sl_uartdrv_instances.h"
 #include "sl_board_control_config.h"
 #include "sl_power_manager_config.h"
+#include "sl_led.h"
+#include "sl_simple_led_instances.h"
 
 // -----------------------------------------------------------------------------
 //                              Macros and Typedefs
@@ -53,6 +55,7 @@
 #define RETRANSMISSION_BUFFER_DEFAULT_LENGTH 10
 #define STACK_SIZE configMINIMAL_STACK_SIZE
 #define SLEEPTIMER_DELAY_MS 1000
+#define PACKET_GENERATOR_DELAY_MS 10000
 
 enum wupSequence{
   Wa,
@@ -169,14 +172,14 @@ int main(void)
   rail_handle = app_init();
 
   //Transmitter Task initialization
-    transmitterTaskHandle = xTaskCreateStatic (transmitterTaskFunction, "transmitterTask", STACK_SIZE, NULL, 2, transmitterTaskStack, &transmitterTaskTCB);
+    transmitterTaskHandle = xTaskCreateStatic (transmitterTaskFunction, "transmitterTask", STACK_SIZE, NULL, 3, transmitterTaskStack, &transmitterTaskTCB);
     if (transmitterTaskHandle == NULL)
       {
         return 0;
       }
 
     //Receiver Task
-    receiverTaskHandle = xTaskCreateStatic (receiverTaskFunction, "receiverTask", STACK_SIZE, NULL, 3, receiverTaskStack, &receiverTaskTCB);
+    receiverTaskHandle = xTaskCreateStatic (receiverTaskFunction, "receiverTask", STACK_SIZE, NULL, 2, receiverTaskStack, &receiverTaskTCB);
     if (receiverTaskHandle == NULL)
      {
        return(0);
@@ -233,11 +236,11 @@ int main(void)
 void pktGeneratorTaskFunction (){
   while (1)
     {
-      vTaskDelay(pdMS_TO_TICKS(rand() % 1500));
+      vTaskDelay(pdMS_TO_TICKS(PACKET_GENERATOR_DELAY_MS));
 
       generatedPacket.header.pktSeq = pktSequenceNumber;
       generatedPacket.header.wupSeq = wupSeq;
-      snprintf(generatedPacket.payload, 11, "%lu", pktSequenceNumber);
+      snprintf((char*)generatedPacket.payload, 11, "%lu", pktSequenceNumber);
 
       if(retransmissionBufferIndex < QUEUE_DEFAULT_LENGTH){
           memcpy(&retransmissionBuffer[retransmissionBufferIndex], &generatedPacket, sizeof(pkt_t));
@@ -249,7 +252,6 @@ void pktGeneratorTaskFunction (){
           memcpy(&retransmissionBuffer[QUEUE_DEFAULT_LENGTH - 1], &generatedPacket, sizeof(pkt_t));
       }
 
-      xQueueSend(transmitterQueueHandle, (void *)&generatedPacket, 0);
 
       pktSequenceNumber++;
 
@@ -257,6 +259,8 @@ void pktGeneratorTaskFunction (){
         wupSeq = Wb;
       else
         wupSeq = Wa;
+
+      xQueueSend(transmitterQueueHandle, (void *)&generatedPacket, 0);
     }
 }
 
@@ -267,18 +271,20 @@ void transmitterTaskFunction(){
       //Simulate sending a WUP packet to wake up nodes on the sub GHZ frequency.
       //In our case we send the actual packet
       RAIL_WriteTxFifo (rail_handle, (uint8_t*) &txPacket, sizeof(pkt_t), false);
-      while (RAIL_StartTx (rail_handle, 21, 0, NULL) != RAIL_STATUS_NO_ERROR);
+      while (RAIL_StartTx (rail_handle, 1, 0, NULL) != RAIL_STATUS_NO_ERROR);
       //Wait for 100ms to be sure that the node have woken up
       //We are still in the rx wake up window (1sec)
       sl_sleeptimer_delay_millisecond (100);
+      //Implement a random jitter to avoid collisions
+      sl_sleeptimer_delay_millisecond (rand() % 300);
       //Send the actual flood data packet
       RAIL_WriteTxFifo (rail_handle, (uint8_t*) &txPacket, sizeof(pkt_t), false);
       while (RAIL_STATUS_NO_ERROR != RAIL_StartTx (rail_handle, 0, 0, NULL));
 
       //SERIAL OUTPUT FOR DEBUGGING PURPOSES
-      snprintf (&transmitterBuffer, 100, "Packet sent:\r\nSequence number: %u\r\nWUP Sequence: %u\r\n", txPacket.header.pktSeq, txPacket.header.wupSeq);
+      snprintf ((char*)transmitterBuffer, 100, "Packet sent:\r\nSequence number: %u\r\nWUP Sequence: %u\r\n", txPacket.header.pktSeq, txPacket.header.wupSeq);
 
-      while (ECODE_OK != UARTDRV_TransmitB (sl_uartdrv_usart_vcom_handle, &transmitterBuffer[0], strlen (transmitterBuffer)));
+      while (ECODE_OK != UARTDRV_TransmitB (sl_uartdrv_usart_vcom_handle, &transmitterBuffer[0], strlen ((char*)transmitterBuffer)));
   }
 }
 
@@ -299,9 +305,12 @@ void receiverTaskFunction (){
                   if(retransmissionBuffer[i].header.pktSeq == rxPacket.header.pktSeq){
                       xQueueSend(transmitterQueueHandle, (void *)&retransmissionBuffer[i], 0);
                       found = true;
+                      sl_sleeptimer_delay_millisecond(50);
                   }
-                  if(found && retransmissionBuffer[i].header.pktSeq > rxPacket.header.pktSeq)
+                  if(found && retransmissionBuffer[i].header.pktSeq > rxPacket.header.pktSeq){
                     xQueueSend(transmitterQueueHandle, (void *)&retransmissionBuffer[i], 0);
+                    sl_sleeptimer_delay_millisecond(50);
+                  }
               }
           }
       }
@@ -365,11 +374,20 @@ sl_rail_util_on_event (RAIL_Handle_t rail_handle, RAIL_Events_t events)
     }
   if (events & RAIL_EVENT_RX_PACKET_RECEIVED)
     {
+      sl_led_toggle (&sl_led_led1);
+      sl_udelay_wait (10000);
+      sl_led_toggle (&sl_led_led1);
       //new rx -> deferred handler architecture
       RAIL_HoldRxPacket (rail_handle);
       xHigherPriorityTaskWoken = pdFALSE;
       vTaskNotifyGiveFromISR(receiverTaskHandle, &xHigherPriorityTaskWoken);
       portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+    }
+  if (events & RAIL_EVENT_TX_PACKET_SENT)
+    {
+      sl_led_toggle (&sl_led_led0);
+      sl_udelay_wait (10000);
+      sl_led_toggle (&sl_led_led0);
     }
 }
 

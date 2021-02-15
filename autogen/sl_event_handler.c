@@ -14,6 +14,7 @@
 #include "sl_rail_util_init.h"
 #include "sl_sleeptimer.h"
 #include "sl_mpu.h"
+#include "sl_simple_led_instances.h"
 #include "sl_uartdrv_instances.h"
 #include "cmsis_os2.h"
 #include "sl_power_manager.h"
@@ -40,6 +41,7 @@ void sl_kernel_start(void)
 
 void sl_driver_init(void)
 {
+  sl_simple_led_init_instances();
   sl_uartdrv_init_instances();
 }
 

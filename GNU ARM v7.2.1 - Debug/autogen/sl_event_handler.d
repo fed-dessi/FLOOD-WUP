@@ -56,12 +56,12 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\efr32mg12p_dmareq.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\efr32mg12p_af_ports.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\efr32mg12p_af_pins.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_system.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_bus.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
- c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h \
- c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
  C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\service\device_init\inc\sl_device_init_nvic.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h \
@@ -89,6 +89,10 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h \
  C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\service\mpu\inc\sl_mpu.h \
+ ../autogen/sl_simple_led_instances.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_simple_led.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
  ../autogen/sl_uartdrv_instances.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\uartdrv\inc\uartdrv.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\service\power_manager\inc\sl_power_manager.h \
@@ -98,7 +102,6 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_usart.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_leuart.h \
- c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu_compat.h \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\common\inc\ecode.h \
@@ -222,6 +225,10 @@ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platfor
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\efr32mg12p_af_pins.h:
 
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h:
+
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h:
+
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_system.h:
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h:
@@ -229,10 +236,6 @@ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platfor
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_bus.h:
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h:
-
-c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h:
-
-c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h:
 
 C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
@@ -288,6 +291,14 @@ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleep
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\service\mpu\inc\sl_mpu.h:
 
+../autogen/sl_simple_led_instances.h:
+
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_simple_led.h:
+
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h:
+
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h:
+
 ../autogen/sl_uartdrv_instances.h:
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\uartdrv\inc\uartdrv.h:
@@ -305,8 +316,6 @@ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platfor
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_usart.h:
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_leuart.h:
-
-c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h:
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu.h:
 
