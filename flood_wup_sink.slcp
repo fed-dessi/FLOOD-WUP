@@ -85,6 +85,8 @@ component:
 - {id: mpu}
 - instance: [inst0]
   id: rail_util_init
+- instance: [led0, led1]
+  id: simple_led
 - {id: device_init}
 - {id: freertos_heap_4}
 - {id: sl_flex_restrictions}

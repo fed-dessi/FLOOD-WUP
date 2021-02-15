@@ -105,7 +105,11 @@ main.o: ../main.c \
  c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_ldma.h \
  C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_config.h \
  C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_board_control_config.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_power_manager_config.h
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_power_manager_config.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_simple_led_instances.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_simple_led.h \
+ c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h
 
 c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 
@@ -320,3 +324,11 @@ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_c
 C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_board_control_config.h:
 
 C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_power_manager_config.h:
+
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h:
+
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_simple_led_instances.h:
+
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_simple_led.h:
+
+c:\siliconlabs\simplicitystudio\v5_2\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h:
