@@ -42,8 +42,6 @@
 extern uint32_t protocolAccelerationBuffer[];
 
 #define RADIO_CONFIG_XTAL_FREQUENCY 38400000UL
-
-#define RAIL0_CHANNEL_GROUP_1_PHY_DATASHEET_2450M_2GFSK_250KBPS_125K
 #define RAIL0_CHANNEL_GROUP_1_PROFILE_BASE
 extern const RAIL_ChannelConfig_t *channelConfigs[];
 

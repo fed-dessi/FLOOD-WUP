@@ -2,15 +2,18 @@
 <project name="uc.module.setup.ucConfig.com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.debug#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904.gcc" propertyScope="project">
   <folder name="config">
     <folder name="rail">
+      <file name="long_range_profile.restriction" uri="studio:/project/config/rail/long_range_profile.restriction"/>
       <file name="radio_settings.radioconf" uri="studio:/project/config/rail/radio_settings.radioconf"/>
+      <file name="base_profile.restriction" uri="studio:/project/config/rail/base_profile.restriction"/>
+      <file name="wisun_profile.restriction" uri="studio:/project/config/rail/wisun_profile.restriction"/>
     </folder>
     <file name="sl_memory_config.h" uri="studio:/project/config/sl_memory_config.h"/>
     <file name="sl_mx25_flash_shutdown_usart_config.h" uri="studio:/project/config/sl_mx25_flash_shutdown_usart_config.h"/>
     <file name="sl_device_init_dcdc_config.h" uri="studio:/project/config/sl_device_init_dcdc_config.h"/>
     <file name="sl_device_init_lfxo_config.h" uri="studio:/project/config/sl_device_init_lfxo_config.h"/>
-    <file name="FreeRTOSConfig.h" uri="studio:/project/config/FreeRTOSConfig.h"/>
     <file name="sl_simple_led_led0_config.h" uri="studio:/project/config/sl_simple_led_led0_config.h"/>
-    <file name="sl_simple_led_led1_config.h" generated="true" uri="studio:/project/config/sl_simple_led_led1_config.h"/>
+    <file name="sl_simple_led_led1_config.h" uri="studio:/project/config/sl_simple_led_led1_config.h"/>
+    <file name="FreeRTOSConfig.h" uri="studio:/project/config/FreeRTOSConfig.h"/>
     <file name="dmadrv_config.h" uri="studio:/project/config/dmadrv_config.h"/>
     <file name="sl_rail_util_pti_config.h" uri="studio:/project/config/sl_rail_util_pti_config.h"/>
     <file name="uartdrv_config.h" uri="studio:/project/config/uartdrv_config.h"/>

@@ -48,6 +48,9 @@
 #include "sl_led.h"
 #include "sl_simple_led_instances.h"
 
+//#include "file_write_buffer.h"
+//#include "hook.h"
+//#include "sd.h"
 // -----------------------------------------------------------------------------
 //                              Macros and Typedefs
 // -----------------------------------------------------------------------------
@@ -55,7 +58,9 @@
 #define RETRANSMISSION_BUFFER_DEFAULT_LENGTH 10
 #define STACK_SIZE configMINIMAL_STACK_SIZE
 #define SLEEPTIMER_DELAY_MS 1000
-#define PACKET_GENERATOR_DELAY_MS 10000
+#define PACKET_GENERATOR_DELAY_MS 5000
+#define NODE_ID 0
+#define DEBUG 1
 
 enum wupSequence{
   Wa,
@@ -145,15 +150,23 @@ static uint32_t pktSequenceNumber = 0;
 static uint16_t wupSeq = Wa;
 
 ///VCOM Serial print buffer
-static uint8_t transmitterBuffer[100];
+#if DEBUG
+static uint8_t buffer[100];
+#endif
+
 
 ///Retransmission buffer and index
 static pkt_t retransmissionBuffer[QUEUE_DEFAULT_LENGTH];
 static uint32_t retransmissionBufferIndex = 0;
+static uint32_t totalRetries = 0;
 
 static sl_sleeptimer_timer_handle_t delayerSleeptimerHandle;
 static volatile bool wait;
 static bool isTimerRunning;
+
+//static FIL* logFile;
+//static int writeRes;
+//static bool initRes;
 // -----------------------------------------------------------------------------
 //                          Public Function Definitions
 // -----------------------------------------------------------------------------
@@ -171,43 +184,44 @@ int main(void)
   // task(s) if the kernel is present.
   rail_handle = app_init();
 
-  //Transmitter Task initialization
-    transmitterTaskHandle = xTaskCreateStatic (transmitterTaskFunction, "transmitterTask", STACK_SIZE, NULL, 3, transmitterTaskStack, &transmitterTaskTCB);
-    if (transmitterTaskHandle == NULL)
-      {
-        return 0;
-      }
+    //Transmitter Task initialization
+      transmitterTaskHandle = xTaskCreateStatic (transmitterTaskFunction, "transmitterTask", STACK_SIZE, NULL, 3, transmitterTaskStack, &transmitterTaskTCB);
+      if (transmitterTaskHandle == NULL)
+        {
+          return 0;
+        }
 
-    //Receiver Task
-    receiverTaskHandle = xTaskCreateStatic (receiverTaskFunction, "receiverTask", STACK_SIZE, NULL, 2, receiverTaskStack, &receiverTaskTCB);
-    if (receiverTaskHandle == NULL)
-     {
-       return(0);
-     }
+      //Receiver Task
+      receiverTaskHandle = xTaskCreateStatic (receiverTaskFunction, "receiverTask", STACK_SIZE, NULL, 2, receiverTaskStack, &receiverTaskTCB);
+      if (receiverTaskHandle == NULL)
+       {
+         return(0);
+       }
 
-    //Packet Generator Task Initialization
-    pktGeneratorTaskHandle = xTaskCreateStatic (pktGeneratorTaskFunction, "pktGeneratorTask", STACK_SIZE, NULL, 1, pktGeneratorTaskStack, &pktGeneratorTaskTCB);
-    if (pktGeneratorTaskHandle == NULL)
-     {
-       return 0;
-     }
+      //Packet Generator Task Initialization
+      pktGeneratorTaskHandle = xTaskCreateStatic (pktGeneratorTaskFunction, "pktGeneratorTask", STACK_SIZE, NULL, 1, pktGeneratorTaskStack, &pktGeneratorTaskTCB);
+      if (pktGeneratorTaskHandle == NULL)
+       {
+         return 0;
+       }
 
-    //Delayer Task
-    delayerTaskHandle = xTaskCreateStatic (delayerTaskFunction, "delayerTask", configMINIMAL_STACK_SIZE, NULL, 1, delayerTaskStack, &delayerTaskTCB);
-    if (delayerTaskHandle == NULL)
-     {
-       return(0);
-     }
+      //Delayer Task
+      delayerTaskHandle = xTaskCreateStatic (delayerTaskFunction, "delayerTask", STACK_SIZE, NULL, 1, delayerTaskStack, &delayerTaskTCB);
+      if (delayerTaskHandle == NULL)
+       {
+         return(0);
+       }
 
-    //setting tx fifo
-    RAIL_SetTxFifo (rail_handle, railTxFifo, 0, sizeof(pkt_t) * QUEUE_DEFAULT_LENGTH);
+      //setting tx fifo
+      RAIL_SetTxFifo (rail_handle, railTxFifo, 0, sizeof(pkt_t) * QUEUE_DEFAULT_LENGTH);
 
-    //enabling vcom
-    GPIO_PinOutSet (SL_BOARD_ENABLE_VCOM_PORT, SL_BOARD_ENABLE_VCOM_PIN);
+      #if DEBUG
+      //enabling vcom
+      GPIO_PinOutSet (SL_BOARD_ENABLE_VCOM_PORT, SL_BOARD_ENABLE_VCOM_PIN);
+      #endif
 
-    //Init Queues
-    transmitterQueueHandle = xQueueCreateStatic(QUEUE_DEFAULT_LENGTH, sizeof(pkt_t), transmitterQueue, &transmitterQueueDataStruct);
-
+      //Init Queues
+      transmitterQueueHandle = xQueueCreateStatic(QUEUE_DEFAULT_LENGTH, sizeof(pkt_t), transmitterQueue, &transmitterQueueDataStruct);
 #if defined(SL_CATALOG_KERNEL_PRESENT)
   // Start the kernel. Task(s) created in app_init() will start running.
   sl_system_kernel_start();
@@ -240,6 +254,8 @@ void pktGeneratorTaskFunction (){
 
       generatedPacket.header.pktSeq = pktSequenceNumber;
       generatedPacket.header.wupSeq = wupSeq;
+
+
       snprintf((char*)generatedPacket.payload, 11, "%lu", pktSequenceNumber);
 
       if(retransmissionBufferIndex < QUEUE_DEFAULT_LENGTH){
@@ -252,15 +268,21 @@ void pktGeneratorTaskFunction (){
           memcpy(&retransmissionBuffer[QUEUE_DEFAULT_LENGTH - 1], &generatedPacket, sizeof(pkt_t));
       }
 
-
-      pktSequenceNumber++;
-
       if(wupSeq == Wa)
         wupSeq = Wb;
       else
         wupSeq = Wa;
 
       xQueueSend(transmitterQueueHandle, (void *)&generatedPacket, 0);
+
+      #if DEBUG
+      //SERIAL OUTPUT FOR DEBUGGING PURPOSES
+      snprintf ((char*)buffer, 100, "TXPKT-%d-%d\r\n", NODE_ID, generatedPacket.header.pktSeq);
+
+      while (ECODE_OK != UARTDRV_TransmitB (sl_uartdrv_usart_vcom_handle, &buffer[0], strlen ((char*)buffer)));
+      #endif
+
+      pktSequenceNumber++;
     }
 }
 
@@ -280,11 +302,6 @@ void transmitterTaskFunction(){
       //Send the actual flood data packet
       RAIL_WriteTxFifo (rail_handle, (uint8_t*) &txPacket, sizeof(pkt_t), false);
       while (RAIL_STATUS_NO_ERROR != RAIL_StartTx (rail_handle, 0, 0, NULL));
-
-      //SERIAL OUTPUT FOR DEBUGGING PURPOSES
-      snprintf ((char*)transmitterBuffer, 100, "Packet sent:\r\nSequence number: %u\r\nWUP Sequence: %u\r\n", txPacket.header.pktSeq, txPacket.header.wupSeq);
-
-      while (ECODE_OK != UARTDRV_TransmitB (sl_uartdrv_usart_vcom_handle, &transmitterBuffer[0], strlen ((char*)transmitterBuffer)));
   }
 }
 
@@ -297,22 +314,37 @@ void receiverTaskFunction (){
 
       if (packet_handle != RAIL_RX_PACKET_HANDLE_INVALID){
 
-          RAIL_CopyRxPacket (&rxPacket, &packet_info);
+          RAIL_CopyRxPacket ((uint8_t*)&rxPacket, &packet_info);
           RAIL_ReleaseRxPacket (rail_handle, packet_handle);
           bool found = false;
           if(rxPacket.header.wupSeq == Wr){
-              for(unsigned int i = 0; i < retransmissionBufferIndex; i++){
-                  if(retransmissionBuffer[i].header.pktSeq == rxPacket.header.pktSeq){
-                      xQueueSend(transmitterQueueHandle, (void *)&retransmissionBuffer[i], 0);
-                      found = true;
-                      sl_sleeptimer_delay_millisecond(50);
-                  }
-                  if(found && retransmissionBuffer[i].header.pktSeq > rxPacket.header.pktSeq){
-                    xQueueSend(transmitterQueueHandle, (void *)&retransmissionBuffer[i], 0);
-                    sl_sleeptimer_delay_millisecond(50);
-                  }
-              }
-          }
+            for(unsigned int i = 0; i < retransmissionBufferIndex; i++){
+                if(retransmissionBuffer[i].header.pktSeq == rxPacket.header.pktSeq){
+                  xQueueSend(transmitterQueueHandle, (void *)&retransmissionBuffer[i], 0);
+                  found = true;
+                  totalRetries++;
+                  #if DEBUG
+                  snprintf ((char*)buffer, 100, "RTXPKTTX-%d-%d\r\n", NODE_ID, retransmissionBuffer[i].header.pktSeq);
+
+                  while (ECODE_OK != UARTDRV_TransmitB (sl_uartdrv_usart_vcom_handle, &buffer[0], strlen((char*)buffer)));
+                  #endif
+                }
+                if(found && retransmissionBuffer[i].header.pktSeq > rxPacket.header.pktSeq){
+                  xQueueSend(transmitterQueueHandle, (void *)&retransmissionBuffer[i], 0);
+                  totalRetries++;
+                  #if DEBUG
+                  snprintf ((char*)buffer, 100, "RTXPKTTX-%d-%d\r\n", NODE_ID, retransmissionBuffer[i].header.pktSeq);
+
+                  while (ECODE_OK != UARTDRV_TransmitB (sl_uartdrv_usart_vcom_handle, &buffer[0], strlen((char*)buffer)));
+                  #endif
+                }
+            }
+            #if DEBUG
+            snprintf ((char*)buffer, 100, "RTXTOT-%d-%ld\r\n", NODE_ID, totalRetries);
+
+            while (ECODE_OK != UARTDRV_TransmitB (sl_uartdrv_usart_vcom_handle, &buffer[0], strlen((char*)buffer)));
+            #endif
+        }
       }
     }
 }
@@ -329,14 +361,12 @@ void delayerTaskFunction ()
           sl_sleeptimer_start_timer_ms(&delayerSleeptimerHandle, SLEEPTIMER_DELAY_MS, timerCallback, (void*)&wait, 0, 0);
           while(wait);
       }
-      //TODO: remove after finishing the debugging phase
-      if(true)
-        __asm__("nop");
     }
 }
 
 void timerCallback(sl_sleeptimer_timer_handle_t *handle, void *data){
 
+  (void)handle; //unused parameter
   volatile bool *wait_flag = (bool*)data;
 
   *wait_flag = false;
@@ -363,6 +393,7 @@ void rfSenseCb ()
       portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
 }
+
 
 ///RAIL event handler
 void
