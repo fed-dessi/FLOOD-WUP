@@ -62,11 +62,11 @@ autogen/sl_rail_util_callbacks.o: ../autogen/sl_rail_util_callbacks.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_features.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_assert_error_codes.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\app\flex\component\common\sl_flex_assert\sl_flex_assert.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_flex_assert_config.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_flex_assert_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_conversions_efr32.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_types.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_pa_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_pa_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_curves_efr32.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\efr32xg1x/sl_rail_util_pa_curves.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_curve_types_efr32.h
@@ -197,15 +197,15 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\app\flex\component\common\sl_flex_assert\sl_flex_assert.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_flex_assert_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_flex_assert_config.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_conversions_efr32.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_types.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_pa_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_pa_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_curves_efr32.h:
 

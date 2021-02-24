@@ -62,9 +62,9 @@ autogen/sl_simple_led_instances.o: ../autogen/sl_simple_led_instances.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_simple_led_led0_config.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_simple_led_led1_config.h
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_simple_led_led0_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_simple_led_led1_config.h
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 
@@ -192,8 +192,8 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_simple_led_led0_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_simple_led_led0_config.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_simple_led_led1_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_simple_led_led1_config.h:

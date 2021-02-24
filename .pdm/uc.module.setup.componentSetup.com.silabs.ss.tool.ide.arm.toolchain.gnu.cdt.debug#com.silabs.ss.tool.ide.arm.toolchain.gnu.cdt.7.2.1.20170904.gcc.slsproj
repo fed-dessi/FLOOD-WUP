@@ -178,6 +178,8 @@
           <file name="em_system.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_system.c"/>
           <file name="em_usart.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_usart.c"/>
           <file name="em_gpio.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_gpio.c"/>
+          <file name="em_cryotimer.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_cryotimer.c"/>
+          <file name="em_letimer.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_letimer.c"/>
           <file name="em_emu.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_emu.c"/>
           <file name="em_assert.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_assert.c"/>
           <file name="em_core.c" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/src/em_core.c"/>
@@ -192,6 +194,8 @@
           <file name="em_system.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_system.h"/>
           <file name="em_usart.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_usart.h"/>
           <file name="em_gpio.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_gpio.h"/>
+          <file name="em_cryotimer.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_cryotimer.h"/>
+          <file name="em_letimer.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_letimer.h"/>
           <file name="em_emu.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_emu.h"/>
           <file name="em_assert.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_assert.h"/>
           <file name="em_bus.h" uri="file:///C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emlib/inc/em_bus.h"/>
@@ -420,11 +424,11 @@
       </folder>
     </folder>
   </folder>
-  <file name="main.c" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/sink_test/main.c"/>
-  <file name="app_init.c" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/sink_test/app_init.c"/>
-  <file name="app_process.c" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/sink_test/app_process.c"/>
-  <file name="app_init.h" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/sink_test/app_init.h"/>
-  <file name="app_process.h" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/sink_test/app_process.h"/>
+  <file name="main.c" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/flood%20wup%20sink/main.c"/>
+  <file name="app_init.c" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/flood%20wup%20sink/app_init.c"/>
+  <file name="app_process.c" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/flood%20wup%20sink/app_process.c"/>
+  <file name="app_init.h" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/flood%20wup%20sink/app_init.h"/>
+  <file name="app_process.h" linked="false" uri="file:///C:/Users/Federico/SimplicityStudio/v5_workspace/flood%20wup%20sink/app_process.h"/>
   <includePath uri="studio:/project/"/>
   <includePath uri="studio:/sdk/platform/common/toolchain/inc"/>
   <includePath uri="studio:/sdk/platform/service/system/inc"/>

@@ -63,7 +63,7 @@ gecko_sdk_3.1.1/platform/driver/leddrv/src/sl_simple_led.o: \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu_compat.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h
@@ -194,7 +194,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu.h:
 

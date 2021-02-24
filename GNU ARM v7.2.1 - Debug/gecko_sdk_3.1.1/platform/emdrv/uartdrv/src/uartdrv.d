@@ -1,7 +1,7 @@
 gecko_sdk_3.1.1/platform/emdrv/uartdrv/src/uartdrv.o: \
  C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/emdrv/uartdrv/src/uartdrv.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\uartdrv\inc\uartdrv.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\power_manager\inc\sl_power_manager.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\em_device.h \
@@ -65,7 +65,7 @@ gecko_sdk_3.1.1/platform/emdrv/uartdrv/src/uartdrv.o: \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_usart.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_leuart.h \
@@ -76,15 +76,15 @@ gecko_sdk_3.1.1/platform/emdrv/uartdrv/src/uartdrv.o: \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu_compat.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\common\inc\ecode.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/uartdrv_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/uartdrv_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\dmadrv\inc\dmadrv.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_ldma.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/dmadrv_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\gpiointerrupt\inc\gpiointerrupt.h
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\uartdrv\inc\uartdrv.h:
 
@@ -212,7 +212,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h:
 
@@ -234,12 +234,12 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\common\inc\ecode.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/uartdrv_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/uartdrv_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\dmadrv\inc\dmadrv.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_ldma.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/dmadrv_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\gpiointerrupt\inc\gpiointerrupt.h:

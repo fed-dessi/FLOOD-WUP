@@ -58,13 +58,13 @@ gecko_sdk_3.1.1/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.o: \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\efr32mg12p_af_pins.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h \
  C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/service/sleeptimer/src/sli_sleeptimer_hal.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sli_sleeptimer.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_bus.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
@@ -187,7 +187,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h:
 
@@ -199,7 +199,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_common.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu.h:
 

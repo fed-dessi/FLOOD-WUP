@@ -1,6 +1,6 @@
 main.o: ../main.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\system\inc\sl_system_init.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\power_manager\inc\sl_power_manager.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\em_device.h \
@@ -64,7 +64,7 @@ main.o: ../main.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h \
  ../app_init.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail.h \
@@ -75,8 +75,8 @@ main.o: ../main.c \
  ../app_process.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\system\inc\sl_system_kernel.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\source\include\freertos.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/FreeRTOSConfig.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/RTE_Components.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/FreeRTOSConfig.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/RTE_Components.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\cmsis\rtos2\freertos\include\freertos_evr.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\source\include\projdefs.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\source\include\portable.h \
@@ -88,9 +88,9 @@ main.o: ../main.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\source\include\queue.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\source\include\task.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\udelay\inc\sl_udelay.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_uartdrv_usart_vcom_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_uartdrv_usart_vcom_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_usart.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_uartdrv_instances.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_uartdrv_instances.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\uartdrv\inc\uartdrv.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_leuart.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
@@ -100,20 +100,20 @@ main.o: ../main.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu_compat.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\common\inc\ecode.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/uartdrv_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/uartdrv_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\dmadrv\inc\dmadrv.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_ldma.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/dmadrv_config.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_board_control_config.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_power_manager_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_board_control_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_power_manager_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_simple_led_instances.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_simple_led_instances.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_simple_led.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\system\inc\sl_system_init.h:
 
@@ -241,7 +241,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h:
 
@@ -263,9 +263,9 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\source\include\freertos.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/FreeRTOSConfig.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/FreeRTOSConfig.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/RTE_Components.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/RTE_Components.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\freertos\cmsis\rtos2\freertos\include\freertos_evr.h:
 
@@ -289,11 +289,11 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\util\
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\udelay\inc\sl_udelay.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_uartdrv_usart_vcom_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_uartdrv_usart_vcom_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_usart.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_uartdrv_instances.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_uartdrv_instances.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\uartdrv\inc\uartdrv.h:
 
@@ -313,21 +313,21 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\common\inc\ecode.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/uartdrv_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/uartdrv_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\dmadrv\inc\dmadrv.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_ldma.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/dmadrv_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_config.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_board_control_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_board_control_config.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_power_manager_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_power_manager_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_led.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_simple_led_instances.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_simple_led_instances.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_simple_led.h:
 

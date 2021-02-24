@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
-  <descriptors name="flood wup sink">
+  <descriptors name="flood_wup_sink">
     <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.super:3.1.1._374828386"/>
     <properties key="universalConfig.generationDirectory" value="C:\Users\Federico\SimplicityStudio\v5_workspace\flood wup sink"/>
     <properties key="universalConfig.toolchainCompatibility" value="iar gcc"/>

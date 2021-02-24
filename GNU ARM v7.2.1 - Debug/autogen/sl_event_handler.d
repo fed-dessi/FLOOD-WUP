@@ -62,7 +62,7 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_bus.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\device_init\inc\sl_device_init_nvic.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\hardware\board\inc\sl_board_init.h \
@@ -76,7 +76,7 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\chip\efr32\efr32xg1x\rail_chip_specific.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_features.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_types.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_pa_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_pa_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_curves_efr32.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\efr32xg1x/sl_rail_util_pa_curves.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_curve_types_efr32.h \
@@ -85,9 +85,9 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  ../autogen/sl_rail_util_init.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_assert_error_codes.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_init_inst0_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_init_inst0_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\mpu\inc\sl_mpu.h \
  ../autogen/sl_simple_led_instances.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\leddrv\inc\sl_simple_led.h \
@@ -105,10 +105,10 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_cmu_compat.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\common\inc\ecode.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/uartdrv_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/uartdrv_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\dmadrv\inc\dmadrv.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_ldma.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/dmadrv_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_config.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\cmsis\rtos2\include\cmsis_os2.h
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h:
@@ -237,7 +237,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\autogen/sl_component_catalog.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\autogen/sl_component_catalog.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\device_init\inc\sl_device_init_nvic.h:
 
@@ -265,7 +265,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_types.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_pa_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_pa_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_curves_efr32.h:
 
@@ -283,11 +283,11 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_assert_error_codes.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_init_inst0_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_init_inst0_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_sleeptimer_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_sleeptimer_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\service\mpu\inc\sl_mpu.h:
 
@@ -323,12 +323,12 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\common\inc\ecode.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/uartdrv_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/uartdrv_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\dmadrv\inc\dmadrv.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_ldma.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/dmadrv_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/dmadrv_config.h:
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\cmsis\rtos2\include\cmsis_os2.h:

@@ -62,7 +62,7 @@ gecko_sdk_3.1.1/platform/radio/rail_lib/plugin/pa-conversions/pa_curves_efr32.o:
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\chip\efr32\efr32xg1x\rail_chip_specific.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_features.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_types.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_pa_config.h \
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_pa_config.h \
  C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/radio/rail_lib/plugin/pa-conversions/pa_curves_efr32.h \
  C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/radio/rail_lib/plugin/pa-conversions/efr32xg1x/sl_rail_util_pa_curves.h \
  C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/radio/rail_lib/plugin/pa-conversions/pa_curve_types_efr32.h
@@ -191,7 +191,7 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_types.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_pa_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_pa_config.h:
 
 C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/radio/rail_lib/plugin/pa-conversions/pa_curves_efr32.h:
 

@@ -151,6 +151,11 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_core.h</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_3.1.1/platform/emlib/inc/em_cryotimer.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_cryotimer.h</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_3.1.1/platform/emlib/inc/em_emu.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_emu.h</locationURI>
@@ -164,6 +169,11 @@
 			<name>gecko_sdk_3.1.1/platform/emlib/inc/em_ldma.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_ldma.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/emlib/inc/em_letimer.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_letimer.h</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.1.1/platform/emlib/inc/em_leuart.h</name>
@@ -211,6 +221,11 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_core.c</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_3.1.1/platform/emlib/src/em_cryotimer.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_cryotimer.c</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_3.1.1/platform/emlib/src/em_emu.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_emu.c</locationURI>
@@ -224,6 +239,11 @@
 			<name>gecko_sdk_3.1.1/platform/emlib/src/em_ldma.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_ldma.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/emlib/src/em_letimer.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_letimer.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.1.1/platform/emlib/src/em_leuart.c</name>

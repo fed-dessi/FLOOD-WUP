@@ -61,7 +61,7 @@ gecko_sdk_3.1.1/platform/radio/rail_lib/plugin/rail_util_rssi/sl_rail_util_rssi.
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\efr32mg12p\include\efr32mg12p_af_pins.h \
  c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\common\rail_assert_error_codes.h \
  C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/radio/rail_lib/plugin/rail_util_rssi/sl_rail_util_rssi.h \
- C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_rssi_config.h
+ C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_rssi_config.h
 
 c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 
@@ -185,4 +185,4 @@ c:\siliconlabs\simplicitystudio\v5_2_3\developer\sdks\gecko_sdk_suite\v3.1\platf
 
 C:/SiliconLabs/SimplicityStudio/v5_2_3/developer/sdks/gecko_sdk_suite/v3.1/platform/radio/rail_lib/plugin/rail_util_rssi/sl_rail_util_rssi.h:
 
-C:\Users\Federico\SimplicityStudio\v5_workspace\sink_test\config/sl_rail_util_rssi_config.h:
+C:\Users\Federico\SimplicityStudio\v5_workspace\flood\ wup\ sink\config/sl_rail_util_rssi_config.h:
